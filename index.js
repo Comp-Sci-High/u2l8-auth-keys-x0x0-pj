@@ -1,10 +1,18 @@
 // Create a Spoonacular Developer account and obtain an API key by verifying your email.  
 
+
 // 1. Create a variable called API_KEY and store your API key here.
 
+let API_KEY = "f271bf807feb470eba74320bb006f4e1"
+
 // 2. Navigate to Get Recipe Information. Create a variable called requestURL and store the url for getting information on recipe 715538.
+ 
+let requestURL = "https://api.spoonacular.com/recipes/715538/information?addWinePairing=true&apiKey=" + API_KEY
+
 
 // 3. Add query parameters to requestURL so that the nutrition infromation and a wine pair recommendation is provided
+
+
 
 // 4. Navigate to Authentication and identify how API Keys are used
 
@@ -18,6 +26,8 @@ async function fetchAPIData(url) {
 }
 
 // 6. Call the async function below to test your URL. 
+
+fetchAPIData(requestURL)
 
 // 7. As a group create and test a new request URL called requestURL2 
 // It should retrieve 5 random recipes while including the nutrition information
